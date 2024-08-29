@@ -1,0 +1,58 @@
+html, body {
+  font-family: "Indie Flower", cursive;
+  background-color: #FF81AC;
+  color: white;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  flex-direction: column;
+  background-image: url("fundo.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+button {
+font-family: "Bebas Neue", sans-serif;
+background-color: #E91E63;
+border: solid 2px #E91E63;
+border-radius: 200px;
+font-size: 30px;
+margin: 20px;
+color: white;
+}
+
+footer{
+  font-family: "Playwrite AT", cursive;
+}
+
+.passo{
+  display: none;
+}
+
+.passo.ativo{
+  display: block;
+}
+
+img {
+  width: 700px;
+}
+
+footer {
+  color: white;
+  font-family: "Playwrite AT", cursive;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.nome-link {
+  font-family: "Playwrite AT", cursive;
+  color: #FDA2C1;
+  text-decoration: none;
+}
+
+.nome-link:hover {
+  text-decoration: underline;
+}
