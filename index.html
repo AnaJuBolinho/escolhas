@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/addons/p5.sound.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<!-- FONTE BOTÃO !-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&family=Danfo&family=Playwrite+AR:wght@100..400&display=swap" rel="stylesheet">
+  
+<!-- FONTE TEXTO !-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&family=Danfo&family=Indie+Flower&family=Playwrite+AR:wght@100..400&display=swap" rel="stylesheet">
+
+<!-- FONTE RODAPÉ !-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&family=Danfo&family=Indie+Flower&family=Playwrite+AR:wght@100..400&family=Playwrite+AT:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+<meta charset="utf-8" />
+</head>
+<body>
+<main>
+ 
+<!-- PRIMEIRA TELA DE CARREGAMENTO !-->
+<div class="passo ativo" id="passo-0">
+<img src="logo.png">
+<p>Helena, uma jovem e talentosa historiadora, chega ao antigo castelo medieval que herdou de sua família. Após a morte de seu avô, ela decidiu deixar sua vida na cidade e explorar o mistério e o charme do castelo que sempre fascinou sua família. Ao adentrar o castelo pela primeira vez, a garota sente que sua vida está prestes a mudar para sempre. E você, está preparado para embarcar nessa linda história romântica? 
+ </p>
+  
+  <p> Ao chegar, como Helena se sente? </p>
+
+<button class="proxima" data-proximo= "1"> Fica fascinada pela beleza e mistério do castelo 🏰✨ </button>
+
+<button class="proxima" data-proximo= "2"> Fica apreensiva com a solidão e o estado de abandono 🥺😢</button>
+
+<!-- BOTÃO ESCOLHA 1 !-->
+<div class="passo" id="passo-1">
+<img src="logo.png">
+<p>Helena fica maravilhada com a imponência e a arquitetura do castelo. Ela sente que o lugar guarda segredos antigos e histórias não contadas. Animada com a perspectiva de novas descobertas, a garota decide explorar o castelo imediatamente.
+
+Enquanto caminha pelos corredores sombrios, iluminados apenas pela luz filtrada pelas janelas altas e estreitas, Helena sente uma mistura de emoções. Há um toque de nostalgia, lembranças de sua infância quando ouvia as histórias que seu avô contava sobre o castelo, mas também uma sensação de expectativa. 
+  
+Durante sua exploração inicial, Helena encontra dois objetos intrigantes: um diário antigo que conta a história de um amor proibido entre dois jovens de famílias rivais, e um mapa misterioso que parece levar a uma sala secreta dentro do castelo.
+ </p>
+
+<button class="proxima" data-proximo= "3"> Exlorar o antigo diário 📚📓</button>
+
+<button class="proxima" data-proximo= "4"> Explorar o mapa misterioso 📜✨</button>
+  </div>
+  
+   <!-- BOTÃO ESCOLHA 2 !-->
+<div class="passo" id="passo-2">
+<img src="logo.png">
+<p> Helena sente um calafrio ao entrar no castelo, impressionada pela solidão e pelo abandono do lugar. O silêncio pesado e o estado deteriorado do castelo a deixam nervosa, mas ela decide enfrentar seu medo. Determinada a descobrir os segredos do castelo, Helena começa a explorar cada canto escuro, encontrando pistas que revelam um passado cheio de mistérios. Apesar de sua apreensão inicial, ela percebe que o castelo guarda histórias importantes, e seu desejo de desvendá-las é maior do que o medo que sente. 
+  
+Enquanto caminha, se depara com uma porta de madeira que possivelmente a levará até uma sala misteriosa. Helena abre a porta, e vê uma estante antiga com dois antigos artefatos: um livro que conta mais sobre a história de sua família e uma carta que revela um romance antigo e uma promessa de amor eterno. </p>
+
+<button class="proxima" data-proximo= "5"> Decide explorar o livro 📖🔦 </button>
+
+<button class="proxima" data-proximo= "6"> Decide ler a carta misteriosa 📃🧐</button>
+  </div>
+  
+  <!-- BOTÃO ESCOLHA 5-->
+<div class="passo" id="passo-5">
+<img src="logo.png">
+<p> Após encontrar o livro, Helena mergulha em uma jornada de descobertas, ficando em dúvida se deve desenterrar segredos há muito tempo guardados sobre sua família ou seguir seus próprios interesses...  </p>
+  
+<button class = "proximo" data-proximo = "7"> Decide investigar os segredos sobre a família 👨‍👩‍👧 </button>
+
+<button class = "proximo" data-proximo = "8"> Seguir seus próprios interesses 😗 </button>
+</div>
+  
+  <!-- BOTÃO ESCOLHA 6-->
+<div class="passo" id="passo-6">
+<img src="perdeu.png">
+<p> Após encontrar a carta misteriosa e começar a ler, ela descobre que se trata de um romance antigo e uma promessa de amor, mas... </p>
+  
+<button class="proximo" data-proximo="0"> Devido ao cheiro forte de veneno que estava na carta, Helena morreu. Deseja reiniciar? 🕹 </button>
+
+</div>
+  
+  <!-- BOTÃO ESCOLHA 7-->
+<div class="passo" id="passo-7">
+<img src="ganhou.png">
+<p> Helena mergulhou em uma jornada de descobertas ao explorar os mistérios do antigo castelo familiar. Entre corredores empoeirados e salas esquecidas, ela desenterrou um diário antigo, coberto de poeira e segredos. Folheando as páginas amareladas, Helena encontrou relatos emocionantes de seus antecessores e uma revelação surpreendente: um tesouro escondido que havia sido perdido por gerações. Ao unir as peças desse enigma histórico, Helena não apenas desvendou um segredo sobre sua linhagem, mas também encontrou um legado de amor e coragem que preenchia seu coração com uma alegria inesperada e profunda. O castelo, antes um símbolo de mistério, agora resplandecia como um farol de conexão e felicidade para a família. </p>
+  
+<button class="proximo" data-proximo="0"> Reiniciar? 🕹  </button>
+
+</div>
+  
+  
+  <!-- BOTÃO ESCOLHA 8-->
+<div class="passo" id="passo-8">
+<img src="logo.png">
+<p> Helena, movida pela determinação de seguir seus próprios interesses e abandonar os antigos caminhos familiares, decidiu explorar novos horizontes longe do castelo. No entanto, suas escolhas a levaram por um caminho repleto de desafios imprevistos. Seus empreendimentos iniciais, embora promissores, rapidamente se tornaram um campo de obstáculos e frustrações. A falta de experiência e as circunstâncias adversas começaram a pesar, e o sonho que parecia promissor acabou desmoronando.
+ Então...
+  Helena, uma jovem e talentosa historiadora, chega ao antigo castelo medieval que herdou de sua família. Após a morte de seu avô, ela decidiu deixar sua vida na cidade e explorar o mistério e o charme do castelo que sempre fascinou sua família. Ao adentrar o castelo pela primeira vez, a garota sente que sua vida está prestes a mudar para sempre. E você, está preparado para embarcar nessa linda história romântica? </p>
+
+  
+<button class = "proximo" data-proximo = "3"> Exlorar o antigo diário 📚📓 </button>
+
+<button class = "proximo" data-proximo = "4"> Explorar o mapa misterioso 📜✨ </button>
+</div>
+  
+  <!-- BOTÃO ESCOLHA 3-->
+<div class="passo" id="passo-3">
+<img src="logo.png">
+<p> Enquanto Helena explorava os aposentos esquecidos do castelo, encontrou um antigo diário escondido em uma gaveta secreta. Ao abri-lo, descobriu uma história de amor proibido entre dois membros de famílias rivais, um romance que desafiava todas as normas da época... Mas, o que ela decide continuar fazendo? </p>
+  
+<button class="proximo" data-proximo="9"> Decide investigar mais 🤩🤨</button>
+<button class="proximo" data-proximo="10"> Prefere manter o mistério 👻 </button>
+</div>
+
+  <!-- BOTÃO ESCOLHA 4-->
+<div class="passo" id="passo-4">
+<img src="ganhou.png" alt="LOGO NORMAL">
+<p> Ao examinar minuciosamente o mapa encontrado, Helena descobriu uma pista que a levou a uma sala secreta oculta no castelo. Com a ajuda de uma chave antiga, ela abriu um baú coberto de poeira e descobriu um tesouro deslumbrante: joias, documentos históricos e relíquias valiosas, que não apenas confirmavam a riqueza e a importância de sua família, mas também continham pistas para um novo capítulo em sua própria vida. O tesouro revelava segredos que poderiam mudar o rumo de sua jornada de maneira surpreendente.</p>
+
+  <button class = "proximo" data-proximo = "0"> Reiniciar? 🕹  </button>
+</div>
+
+  <!-- BOTÃO ESCOLHA 9-->
+<div class="passo" id="passo-9">
+<img src="ganhou.png">
+<p> Após decidir investigar mais, Helena descobre que o relato detalhava encontros secretos, promessas não cumpridas e uma paixão que transcendeu barreiras, revelando uma conexão profunda e inesperada com sua própria linhagem. Esta revelação transformou sua visão sobre o passado e a fez reconsiderar seu próprio caminho.</p>
+<button class = "proximo" data-proximo = "0"> Reiniciar? 🕹  </button>
+</div>
+  
+  <!-- BOTÃO ESCOLHA 10-->
+<div class="passo" id="passo-10">
+<img src="perdeu.png">
+<p> Enquanto explorava a sala secreta, Helena encontrou um antigo diário, coberto de poeira e cuidadosamente guardado. Ao abrir suas páginas, ela se deparou com uma história de amor proibido entre dois amantes de famílias rivais, uma narrativa repleta de paixão e desespero. No entanto, em vez de se perder nos detalhes da história, Helena decidiu deixar o mistério intacto. </p>
+<button class = "proximo" data-proximo = "0"> Reiniciar? 🕹  </button>
+</div>
+  
+  </main>
+  
+<!-- CRÉDITOS -->
+<footer>
+<p> Jogo produzido por <a href="https://github.com/AnaJuBolinho" target="_blank" class="nome-link"> Ana Julia Bertaglia Belanciere . </a> </p>
+</footer>
+  
+<script src="sketch.js"></script>
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
